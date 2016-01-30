@@ -1,0 +1,1 @@
+# GoProjectStructure
