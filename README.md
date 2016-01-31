@@ -2,7 +2,7 @@
 
 * Structure
   ```
-  <calcproj>
+  <GoProjectStructure>
   ├─<src>
     ├─<calc>
       ├─calc.go
@@ -15,12 +15,12 @@
   ├─<pkg>＃包将被安装到此处
   ```
 
-* 为了能够构建这个工程，需要先把这个工程的根目录加入到环境变量GOPATH中。假设calcproj目录位于~/goyard下，则应编辑~/.bashrc文件，并添加下面这行代码：
-  * export GOPATH=~/goyard/calcproj
+* 为了能够构建这个工程，需要先把这个工程的根目录加入到环境变量GOPATH中。假设GoProjectStructure目录位于~/goyard下，则应编辑~/.bashrc文件，并添加下面这行代码：
+  * export GOPATH=~/goyard/GoProjectStructure
   * 然后执行以下命令应用该设置：$ source ~/.bashrc, GOPATH和PATH环境变量一样，也可以接受多个路径，并且路径和路径之间用冒号分割。
-* 把生成的可执行文件放到calcproj/bin目录中
+* 把生成的可执行文件放到GoProjectStructure/bin目录中
   ```
-  $ cd ~/goyard/calcproj
+  $ cd ~/goyard/GoProjectStructure
   $ mkdir bin
   $ cd bin
   $ go build calc
